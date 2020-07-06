@@ -1,11 +1,13 @@
 package se.lexicon.data;
 
+import org.springframework.stereotype.Component;
 import se.lexicon.model.AppUser;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+@Component
 public class AppUserInMemoryStorage implements AppUserDAO {
 
     private Set<AppUser> appUsers = new HashSet<>();
